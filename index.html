@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="focus.css">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="musicplayer.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="heading">Work Smart <br> Task, Timer, Tools</h1>
+        <div class="app">
+            <h2>To-Do List <img src="images/icon.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button class="Btn" onclick="addTask()">Add</button>
+            </div>
+
+            <ul id="list-container">
+                
+            </ul>
+        </div>
+
+        <div class="app" id="focus-app">
+            <h2>Focus to Do <img src="images/focus.png" alt=""></h2>
+            <div id="focus-container">
+                <div id="display">00:00:00:00</div>
+                <div class="focus-buttons">
+                    
+                    <button class="Btn" id="stopBtn" onclick="stop()">END</button>
+                    <button class="Btn" id="startBtn" onclick="start()">FOCUS</button>
+                    <button class="Btn" id="resetBtn" onclick="reset()">RESET</button>
+                </div>
+                <p id="focus-time"></p>
+            </div>
+        </div>
+
+        
+
+        <div class="app" id="music-app">
+            <h2>Lo-Fi Music<img src="images/music.png"></h2>
+            <div class="music-container">
+                <div class="music-info">
+                    <h4 class="title" id="title">Stardust </h4>
+                </div>
+
+                <audio src="music/stardust.mp3" id="audio"></audio>
+
+                <div class="img-container">
+                    <img src="music/90s.webp" id="cover">
+                </div>
+
+                <div class="progress-control">
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        
+                        <div class="navigation">
+                        
+                        <button id="prev" class="actionBtn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+
+                        <button id="play" class="actionBtn actionBtn-Big">
+                            <i class="fas fa-play"></i>
+                        </button>
+
+                        <button id="next" class="actionBtn">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="app" id="weather-app">
+            <h2>Weather Forecast<img src="images/weather.png"></h2>
+            <div class="search-weather">
+                <input type="text" id="city" placeholder="Enter city">
+                <button class="search"><img src="images/search.png"></button>
+            </div>
+            <p class="displayError"></p>
+            <div class="weather">
+                <img class="weather-icon" src="images/sunny.png" >
+                <h1 class="displayTemp">22C</h1>
+                <h2 class="displayCity">Sri lanka</h2>
+
+                <div class="displayDetails">
+                    <div class="col">
+                        <img src="images/humidity.png" >
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+
+                    <div class="col">
+                        <img src="images/wind.png" >
+                        <p class="wind">50%</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>       
+            </div>
+            
+        </div>
+
+        
+    </div>
+    <script src="todo.js"></script>
+    <script src="focus.js"></script>
+    <script src="weather.js"></script>
+    <script src="musicplayer.js"></script>
+</body>
+</html>

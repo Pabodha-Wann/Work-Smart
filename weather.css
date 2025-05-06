@@ -1,0 +1,60 @@
+#weather-app{
+    background: linear-gradient(135deg,#0098fe,#e3d406);
+    color: white;
+    
+}
+
+.search-weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edeeed;
+    border-radius: 5rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+
+.search-weather img{
+    width:1.5rem;
+    height:1.5rem;
+    margin-right: 1rem;
+    
+}
+
+.search-weather button{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.weather{
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.displayCity{
+    justify-content: center;
+}
+
+.displayDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.displayDetails img{
+    width:3rem;
+    height:3rem;
+}
+
+.displayError{
+    text-align: center;
+}
+
+.weather{
+    display: none;
+}
+

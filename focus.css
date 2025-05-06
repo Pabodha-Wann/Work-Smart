@@ -1,0 +1,76 @@
+#focus-container #display{
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.297);
+    margin-bottom: 20%;
+    color: hsl(326, 98%, 83%);
+
+}
+
+#focus-app{
+    background:linear-gradient(135deg, #7a7a7a,#2e2e2e, #4d4d4d, #1a1a1a );
+}
+
+#focus-container{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding: 20%;
+    justify-content: center;  
+}
+
+.focus-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+#startBtn{
+    background-color: hsl(120, 100%, 40%);
+}
+
+#startBtn:hover{
+    background-color:hsl(120, 100%, 30%) ;
+}
+
+#stopBtn{
+    background-color: hsl(0, 100%, 50%);
+}
+
+#stopBtn:hover{
+    background-color:hsl(0, 100%, 40%) ;
+}
+
+
+#resetBtn{
+    background-color: hsl(192, 100%, 60%);
+}
+
+#resetBtn:hover{
+    background-color:hsl(192, 100%, 40%) ;
+}
+
+
+#focus-time{
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*MOBILE VERSION*/
+
+@media screen and (max-width:700px) {  
+    .app #focus-container #display{
+       font-size: 1.5rem;
+       
+    }
+
+    .focus-buttons{
+        gap: 1rem;
+        justify-content: center;
+           
+    }
+}

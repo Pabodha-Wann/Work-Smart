@@ -1,0 +1,129 @@
+#music-app{
+    background-image: linear-gradient( 0deg,
+    rgba(247, 247, 247, 1) 23.8%,
+    rgba(252, 221, 221, 1) 92%);
+   
+}
+.music-container{
+    display: flex;
+    flex-direction:row;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+
+}
+
+
+
+.img-container img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    align-items: left;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state:paused ;
+}
+
+.play img{
+    animation-play-state: running;
+}
+
+
+.img-container{
+    position: relative;
+}
+
+
+.img-container::after{
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    background-color: white;
+    
+    border-radius: 50%;
+    transform: translate(-300%,200%);
+}
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap:2rem;
+}
+
+.actionBtn{
+    border: none;
+    background-color: white;
+    color: #dfdbdf;
+    font-size: 1.5rem;
+    
+    cursor: pointer;
+}
+
+.actionBtn-Big{
+    font-size: 2.5rem;
+}
+
+.music-info{
+    position: absolute;
+    top: 3rem;
+    left: 13rem;
+}
+
+.progress-control{
+    padding-top: 1rem;
+    width: 100%;
+}
+.progress-bar{
+    background-color: hsl(0, 84%, 78%);
+    width: 0%;
+    height: 0.3rem;
+    border-radius: 0.5rem ;
+    cursor: pointer;
+}
+.progress-container{
+    background-color: hsl(0, 0%, 90%);
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*MOBILE VERSION*/
+
+@media screen and (max-width:700px) {
+    .music-container{
+        display: flex;
+        flex-direction:column;
+        
+    }
+
+    .img-container{
+        padding: 2rem;
+    }
+
+    .music-info{
+        top: 5%;
+        left: 38%;
+        
+        
+    }
+
+
+
+}

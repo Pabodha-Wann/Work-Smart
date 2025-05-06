@@ -13,10 +13,8 @@ Features
 Responsive Design
 This app is **fully responsive** and adapts smoothly to various screen sizes, including desktops, tablets, and mobile devices.
 
-
 Preview
-images/screenshot.png
-
+[screenshot](https://github.com/user-attachments/assets/c79f5566-92eb-4194-a4c7-cbc62da1920f)
 
 Technologies Used
 - HTML5

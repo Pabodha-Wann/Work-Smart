@@ -1,5 +1,4 @@
 # Work Smart
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Pabodha-Wann/Work-Smart)
 
 Work Smart is a responsive, all-in-one productivity dashboard designed to enhance your workflow. It combines essential tools into a single, clean interface, built purely with vanilla JavaScript, HTML, and CSS, without relying on any external frameworks.
 
